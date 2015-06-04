@@ -38,7 +38,7 @@ _filename=$NAME/shot-$count
 
 # # auto sequence:
 echo "will take $NUM_IMAGES images.. this may take while..."
-for i in $(seq 1 $NUM_IMAGES); do
+for ((i=1; i<=$NUM_IMAGES; i++)); do
   _filename=$NAME/shot-$count
   echo "************************"
   echo Getting image $i
