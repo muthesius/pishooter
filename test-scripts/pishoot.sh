@@ -1,7 +1,8 @@
 #!/usr/bin/env sh
 
 USER=root
-IP="10.2.242.247"
+# IP="10.2.242.247"
+IP="192.168.42.1"
 NAME=$1
 NUM_IMAGES=$2
 SLEEP=5
