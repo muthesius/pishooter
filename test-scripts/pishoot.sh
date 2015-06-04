@@ -39,7 +39,7 @@ _filename=$NAME/shot-$count
 # # auto sequence:
 echo "will take $NUM_IMAGES images.. this may take while..."
 for ((i=1; i<=$NUM_IMAGES; i++)); do
-  _filename=$NAME/shot-$count
+  _filename=$NAME/shot-$i
   echo "************************"
   echo Getting image $i
   ssh $USER@${IP} raspistill -n -o - > $_filename.jpeg
