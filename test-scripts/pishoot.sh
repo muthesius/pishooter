@@ -45,8 +45,9 @@ for i in $(seq 1 $NUM_IMAGES); do
   ssh $USER@${IP} raspistill -n -o - > $_filename.jpeg
   echo "****** DONE  ***********"
   read -s -n 1 -p "Press any key for next image (Escape or Control-C to exit)" key
+  echo
   case $key in
-     $'\e') echo "\nQuitting... bye, bye!"; exit;;
+     $'\e') echo "Quitting... bye, bye!"; exit;;
  esac
 done
 
